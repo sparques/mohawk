@@ -1880,7 +1880,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 66.04) (xy 175.26 66.04)
+			(xy 201.93 60.96) (xy 208.28 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1970,7 +1970,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 93.98) (xy 119.38 93.98)
+			(xy 107.95 91.44) (xy 119.38 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2040,6 +2040,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 76.2) (xy 170.18 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fead49a-8770-4f78-b560-12a867a6a0a7")
+	)
+	(wire
+		(pts
 			(xy 116.84 99.06) (xy 119.38 99.06)
 		)
 		(stroke
@@ -2080,6 +2090,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 82.55) (xy 199.39 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4861607f-d278-4a05-a99d-95f763bca319")
+	)
+	(wire
+		(pts
 			(xy 76.2 60.96) (xy 80.01 60.96)
 		)
 		(stroke
@@ -2090,7 +2110,17 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 68.58) (xy 173.99 68.58)
+			(xy 219.71 82.55) (xy 213.36 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51c997b8-f9f3-4440-b71b-5bc80c1e8445")
+	)
+	(wire
+		(pts
+			(xy 170.18 68.58) (xy 208.28 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2100,7 +2130,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 76.2) (xy 170.18 76.2)
+			(xy 208.28 82.55) (xy 199.39 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2150,6 +2180,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 91.44) (xy 119.38 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ab44223-ad27-4ac3-b98d-52f25f6f2944")
+	)
+	(wire
+		(pts
 			(xy 118.11 71.12) (xy 119.38 71.12)
 		)
 		(stroke
@@ -2180,6 +2220,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 68.58) (xy 218.44 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d1d302b-3189-4e6d-a7d5-0dacb01cff02")
+	)
+	(wire
+		(pts
 			(xy 99.06 50.8) (xy 99.06 53.34)
 		)
 		(stroke
@@ -2187,6 +2237,16 @@
 			(type default)
 		)
 		(uuid "7e1920ef-53b6-4552-81c3-f5b2da1dd800")
+	)
+	(wire
+		(pts
+			(xy 213.36 52.07) (xy 220.98 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f06a850-0950-49fc-8a29-0c07b1c90ad2")
 	)
 	(wire
 		(pts
@@ -2200,7 +2260,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 63.5) (xy 198.12 63.5)
+			(xy 199.39 52.07) (xy 208.28 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2227,6 +2287,26 @@
 			(type default)
 		)
 		(uuid "84209808-d6f0-44d9-bde2-b41e4e8a1a19")
+	)
+	(wire
+		(pts
+			(xy 201.93 60.96) (xy 201.93 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85d6c1df-aeae-43c6-91c2-34bafe01ff94")
+	)
+	(wire
+		(pts
+			(xy 213.36 60.96) (xy 219.71 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "870f9141-4353-4969-b9fa-b466bb4bda2f")
 	)
 	(wire
 		(pts
@@ -2260,6 +2340,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 52.07) (xy 199.39 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2e2f133-4841-409b-8247-487a72c4f163")
+	)
+	(wire
+		(pts
 			(xy 175.26 111.76) (xy 175.26 116.84)
 		)
 		(stroke
@@ -2267,6 +2357,16 @@
 			(type default)
 		)
 		(uuid "a679e929-2beb-459d-891b-ffe601427572")
+	)
+	(wire
+		(pts
+			(xy 199.39 63.5) (xy 170.18 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a821cd44-3bc1-4580-a21b-24dcaff47923")
 	)
 	(wire
 		(pts
@@ -2307,6 +2407,16 @@
 			(type default)
 		)
 		(uuid "b531f9ed-0679-404e-a7b9-ccf3f206fdb7")
+	)
+	(wire
+		(pts
+			(xy 201.93 66.04) (xy 170.18 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b82090fb-4ce9-47bc-8c85-85644b191a92")
 	)
 	(wire
 		(pts
@@ -2367,6 +2477,16 @@
 			(type default)
 		)
 		(uuid "cc2d3d3b-c17e-48fc-86a6-07c1be64a695")
+	)
+	(wire
+		(pts
+			(xy 170.18 73.66) (xy 208.28 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8608d9b-f550-465a-9465-af1622af1870")
 	)
 	(wire
 		(pts
@@ -2460,13 +2580,13 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 73.66) (xy 170.18 73.66)
+			(xy 213.36 73.66) (xy 218.44 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f444d37c-a4a6-4375-a68b-e8dbc87bd0ad")
+		(uuid "f6c6644b-d7bc-4e35-860e-18024ea006e7")
 	)
 	(wire
 		(pts
@@ -2524,7 +2644,7 @@
 	)
 	(global_label "PTT"
 		(shape input)
-		(at 107.95 93.98 180)
+		(at 107.95 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2534,7 +2654,7 @@
 		)
 		(uuid "176f3dfb-1c53-40a2-882d-b4bc4e14eec5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.7596 93.98 0)
+			(at 101.7596 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2570,30 +2690,6 @@
 			)
 		)
 	)
-	(global_label "GPIO21{slash}PCM.DOUT"
-		(shape input)
-		(at 173.99 73.66 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3d3bd320-1d46-4d18-a40c-46a5b9912412")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.7899 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "GPIO11{slash}SPI0.SCLK"
 		(shape input)
 		(at 172.72 78.74 0)
@@ -2607,30 +2703,6 @@
 		(uuid "4be8536a-1988-446d-a390-316ecd645831")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.9885 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "GPIO18{slash}PCM.CLK"
-		(shape input)
-		(at 173.99 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5087b522-5f73-41f1-9fa7-a12c1a4a4cf4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.7466 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2666,6 +2738,54 @@
 			)
 		)
 	)
+	(global_label "GPIO19{slash}PCM.FS"
+		(shape input)
+		(at 219.71 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5e52768f-be85-406c-a69b-d76bd41497ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GPIO18{slash}PCM.CLK"
+		(shape input)
+		(at 218.44 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "69b72a0c-8123-422e-ae3b-601b498f4328")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "GPIO9{slash}SPI0.MISO"
 		(shape input)
 		(at 173.99 81.28 0)
@@ -2679,30 +2799,6 @@
 		(uuid "8c4bc4db-323a-4365-9782-edc8d72cd1ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 193.5804 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "GPIO19{slash}PCM.FS"
-		(shape input)
-		(at 175.26 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b9710901-659a-4771-b715-f182d9fb5c79")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.7466 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2786,6 +2882,30 @@
 			)
 		)
 	)
+	(global_label "GPIO20{slash}PCM.DIN"
+		(shape input)
+		(at 219.71 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d83dfd80-b6dc-4a12-b507-cc930d3e3d0e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.8166 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "RADIO_SPKR"
 		(shape input)
 		(at 118.11 71.12 180)
@@ -2810,9 +2930,9 @@
 			)
 		)
 	)
-	(global_label "GPIO20{slash}PCM.DIN"
+	(global_label "GPIO21{slash}PCM.DOUT"
 		(shape input)
-		(at 175.26 76.2 0)
+		(at 218.44 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2820,9 +2940,9 @@
 			)
 			(justify left)
 		)
-		(uuid "e549810f-aade-47a4-a820-0a79b12d1e2a")
+		(uuid "dd7c83d2-7047-409a-af92-39c9cd33f8b9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.3666 76.2 0)
+			(at 239.2399 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2836,7 +2956,7 @@
 	)
 	(global_label "GPIO4{slash}GPCLK0"
 		(shape input)
-		(at 203.2 63.5 0)
+		(at 220.98 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2846,7 +2966,7 @@
 		)
 		(uuid "e826c3ee-db4e-4259-8f5e-b8a8e0da8c8d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.6132 63.5 0)
+			(at 238.3932 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3496,6 +3616,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 210.82 68.58 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46e20b16-3aed-497f-826e-0e10eb219aea")
+		(property "Reference" "R17"
+			(at 210.82 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 210.82 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 210.82 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 210.82 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c2af6be4-2580-4662-8012-24db4f930db8")
+		)
+		(pin "1"
+			(uuid "88def271-90da-4e7b-adbb-70d16e507415")
+		)
+		(instances
+			(project "mohawk"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/95d3b64b-26c7-4c7c-8016-3b01e2d30caf"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 77.47 63.5 90)
 		(mirror x)
@@ -3830,7 +4029,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 200.66 63.5 90)
+		(at 210.82 52.07 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3841,7 +4040,7 @@
 		(fields_autoplaced yes)
 		(uuid "6dcfa155-8bdd-41ff-a38b-1f68ab72446e")
 		(property "Reference" "R15"
-			(at 200.66 58.42 90)
+			(at 210.82 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3850,8 +4049,8 @@
 				)
 			)
 		)
-		(property "Value" "0"
-			(at 200.66 60.96 90)
+		(property "Value" "10"
+			(at 210.82 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3861,7 +4060,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 200.66 63.5 0)
+			(at 210.82 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3872,7 +4071,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 63.5 0)
+			(at 210.82 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3883,7 +4082,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 200.66 63.5 0)
+			(at 210.82 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4620,6 +4819,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 210.82 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac34003d-cc08-4df8-b8bc-615cfb288fc1")
+		(property "Reference" "R16"
+			(at 210.82 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 210.82 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 210.82 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 210.82 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0ac38a12-ba7e-4d1c-8950-0d984a3e8223")
+		)
+		(pin "1"
+			(uuid "12e1e7fa-7277-45d3-85ca-c0d047a39107")
+		)
+		(instances
+			(project "mohawk"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/95d3b64b-26c7-4c7c-8016-3b01e2d30caf"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "R_Small_3")
 		(lib_id "Device:R_Small")
 		(at 114.3 104.14 270)
@@ -4853,6 +5132,166 @@
 			(project "mohawk"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/95d3b64b-26c7-4c7c-8016-3b01e2d30caf"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 210.82 82.55 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c55a3f23-dffb-4492-a7ce-fc0ef5578832")
+		(property "Reference" "R19"
+			(at 210.82 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 210.82 85.09 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 210.82 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 210.82 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1c1f0d64-8d7c-46a9-9cc8-d97fe9413bd2")
+		)
+		(pin "1"
+			(uuid "94211a37-c4cc-46fe-8a7f-e5ee8ad4354e")
+		)
+		(instances
+			(project "mohawk"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/95d3b64b-26c7-4c7c-8016-3b01e2d30caf"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 210.82 73.66 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c755bb80-c82b-437b-a732-f637e579858b")
+		(property "Reference" "R18"
+			(at 210.82 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 210.82 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 210.82 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 210.82 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "220f467f-c2e9-41ac-8643-5a6c083d9440")
+		)
+		(pin "1"
+			(uuid "00f089b9-30fd-48f0-b3e1-b2a05081f5a0")
+		)
+		(instances
+			(project "mohawk"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/95d3b64b-26c7-4c7c-8016-3b01e2d30caf"
+					(reference "R18")
 					(unit 1)
 				)
 			)
