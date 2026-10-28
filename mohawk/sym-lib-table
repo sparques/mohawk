@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "2026-10-19_13-32-46") (type "KiCad") (uri "${KIPRJMOD}/lib/KiCADv6/2026-10-19_13-32-46.kicad_sym") (options "") (descr ""))
+	(lib (name "2026-10-19_14-31-09") (type "KiCad") (uri "${KIPRJMOD}/lib/KiCADv6/2026-10-19_14-31-09.kicad_sym") (options "") (descr ""))
+	(lib (name "2026-10-19_14-35-10") (type "KiCad") (uri "${KIPRJMOD}/lib/KiCADv6/2026-10-19_14-35-10.kicad_sym") (options "") (descr ""))
+)
