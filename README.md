@@ -1,5 +1,7 @@
 ![Fox with a Mohawk](mohawk.svg)
 
+![PCB Render Front](board_front.png) ![PCB Render Back](board_back.png)
+
 # Mohawk
 
 Mohawk is the second iteration of RADIC-818: a Raspberry Pi Zero µHAT-sized UHF/VHF radio interface built around a DRA818V radio module. It brings the radio's audio, configuration UART, and push-to-talk control to a Raspberry Pi, and provides an RS-232 port for an external device. The current design is a KiCad 10 schematic and two-layer PCB. Hardware validation has not been recorded in this repository.

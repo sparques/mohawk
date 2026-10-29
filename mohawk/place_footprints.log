@@ -1,6 +1,6 @@
-10-26 20:23:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 674:Plugin executed on: 'linux'
-10-26 20:23:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 675:Plugin executed with python version: '3.14.6 (main, Jun 15 2026, 11:36:54) [GCC 16.1.1 20260430]'
-10-26 20:23:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 676:KiCad build version: 10.0.5
-10-26 20:23:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 677:Plugin version: 5.0.0
+10-28 17:01:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 674:Plugin executed on: 'linux'
+10-28 17:01:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 675:Plugin executed with python version: '3.14.6 (main, Jun 15 2026, 11:36:54) [GCC 16.1.1 20260430]'
+10-28 17:01:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 676:KiCad build version: 10.0.5
+10-28 17:01:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 677:Plugin version: 5.0.0
 
-10-26 20:23:40 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 678:Frame repr: <wx._core.Frame object at 0x7f96e496d2e0>
+10-28 17:01:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 678:Frame repr: <wx._core.Frame object at 0x7fd1a1b3a720>
