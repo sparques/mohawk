@@ -56,11 +56,11 @@ Pin numbers below come from the current schematic/netlist. Check the PCB pad num
 | LS1 | Two-pin speaker header: codec headphone output via C18 and GND. |
 | WP1 | Open solder jumper for EEPROM write protection; closing it connects the EEPROM's `WP` pin to 3.3 V. |
 
-J3 carries **5 V power** but uses the Pi's **3.3 V GPIO/I²C signals**. The schematic note calls its interrupt line “GPIO4”; the actual J3 pin 1 net is `GPIO17`. Use the netlist/pin table above when wiring a UI board.
+J3 carries **5 V power** but uses the Pi's **3.3 V GPIO/I²C signals**. `GPIO17` Is brought out for use as an interrupt, but is just a GPIO pin, so it could be used for an idicator LED or a button, etc. Use the netlist/pin table above when wiring a UI board.
 
 There is no USB UART or 2 × 5 IDC RS-232 connector in the current schematic. The external serial connection is the ‎MAX3232 and J4's five SMD pads.
 
-The HAT ID EEPROM uses `ID_SDA`/`ID_SCL` on J1 pins 27/28. Those are separate from the ordinary I²C1 pins used at J3. The board provides the EEPROM circuit, but its contents and any Raspberry Pi device-tree or driver configuration are not provided in this repository.
+The HAT ID EEPROM uses `ID_SDA`/`ID_SCL` on J1 pins 27/28. Those are separate from the ordinary I²C1 pins used at J3. The device tree overlay is still a WIP, pending the first prototype build.
 
 ## Control signals on the Pi header
 
