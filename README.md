@@ -4,7 +4,7 @@
 
 # Mohawk
 
-Mohawk is the second iteration of RADIC-818: a Raspberry Pi Zero µHAT-sized UHF/VHF radio interface built around a DRA818V radio module. It brings the radio's audio, configuration UART, and push-to-talk control to a Raspberry Pi, and provides an RS-232 port for an external device. The current design is a KiCad 10 schematic and two-layer PCB. Hardware validation has not been recorded in this repository.
+Mohawk is the second iteration of RADIC-818: a Raspberry Pi Zero µHAT-sized UHF/VHF radio interface built around a DRA818 radio module which comes in a UHF and a VHF variant (DRA818U / DRA818V). It brings the radio's audio, configuration UART, and push-to-talk control to a Raspberry Pi, and provides an RS-232 port for an external device. The current design is a KiCad 10 schematic and two-layer PCB. Hardware validation has not been recorded in this repository.
 
 ## Project files
 
@@ -26,15 +26,17 @@ The schematic and board were saved with KiCad 10. Custom footprints use `${KIPRJ
 | U3 | DRA818 radio module (VHF variant intended) | RF transceiver; UART configuration, analog audio, PTT, squelch, and power-down signals | [DRA818V](datasheets/DRA818V.pdf) |
 | U5 | TLV320AIC3204 | SPI-controlled audio codec with I²S/PCM audio to the Pi | [TLV320AIC3204](datasheets/tlv320aic3204.pdf) |
 | U2 | SC16IS752 | SPI-to-dual-UART bridge: one channel for the radio, one for external serial | [SC16IS752](datasheets/SC16IS752_SC16IS762.pdf) |
-| U4 | MAX232 | Converts the external UART channel to RS-232 levels | [MAX232E](datasheets/max232e.pdf) |
+| U4 | ‎MAX3232 | Converts the external UART channel to RS-232 levels | [‎MAX3232E](datasheets/‎MAX3232e.pdf) |
 | U1 | CAT24C256 | Raspberry Pi HAT identification EEPROM on the dedicated ID I²C pins | — |
 | Y1 | 1.8432 MHz oscillator | Clock for the SC16IS752 | [Abracon ASE series](datasheets/ASEseries.pdf) |
 
-The Pi's SPI0 bus is shared by the UART bridge (CE1) and codec (CE0). The codec's digital audio uses the Pi's PCM/I²S pins. The bridge's two UART channels connect separately to the DRA818 and MAX232, leaving the Pi's built-in UART pins available on the 40-pin header. The codec connects to the radio's analog input and output; its `GPIO_MFP5` pin drives the radio's PTT net. The codec's right headphone output feeds the two-pin speaker connection through a coupling capacitor.
+The BoM will be finalized once a verified working prototype has been assembled and specific part variants have been nailed down and confirmed good.
+
+The Pi's SPI0 bus is shared by the UART bridge (CE1) and codec (CE0). The codec's digital audio uses the Pi's PCM/I²S pins. The bridge's two UART channels connect separately to the DRA818 and ‎MAX3232, leaving the Pi's built-in UART pins available on the 40-pin header. The codec connects to the radio's analog input and output; its `GPIO_MFP5` pin drives the radio's PTT net. The codec's right headphone output feeds the two-pin speaker connection through a coupling capacitor.
 
 ```text
                        SPI0 CE1 ── SC16IS752 ── UART A ── DRA818V ── SMA antenna
-                      /                  └────── UART B ── MAX232 ── RS-232 pads
+                      /                  └────── UART B ── ‎MAX3232 ── RS-232 pads
 Raspberry Pi 40-pin ── SPI0 CE0 ── TLV320AIC3204 ── analog audio ── DRA818V
          header       └─ PCM/I²S ────────┘       └──────── speaker header
                       ID I²C ───── CAT24C256
@@ -56,7 +58,7 @@ Pin numbers below come from the current schematic/netlist. Check the PCB pad num
 
 J3 carries **5 V power** but uses the Pi's **3.3 V GPIO/I²C signals**. The schematic note calls its interrupt line “GPIO4”; the actual J3 pin 1 net is `GPIO17`. Use the netlist/pin table above when wiring a UI board.
 
-There is no USB UART or 2 × 5 IDC RS-232 connector in the current schematic. The external serial connection is the MAX232 and J4's five SMD pads.
+There is no USB UART or 2 × 5 IDC RS-232 connector in the current schematic. The external serial connection is the ‎MAX3232 and J4's five SMD pads.
 
 The HAT ID EEPROM uses `ID_SDA`/`ID_SCL` on J1 pins 27/28. Those are separate from the ordinary I²C1 pins used at J3. The board provides the EEPROM circuit, but its contents and any Raspberry Pi device-tree or driver configuration are not provided in this repository.
 
@@ -86,3 +88,11 @@ kicad-cli sch erc -o /tmp/mohawk-erc.rpt mohawk/mohawk.kicad_sch
 kicad-cli pcb drc --schematic-parity -o /tmp/mohawk-drc.rpt mohawk/mohawk.kicad_pcb
 kicad-cli sch export bom -o /tmp/mohawk-bom.csv mohawk/mohawk.kicad_sch
 ```
+
+## Build Notes
+
+U1 (the I²C EEPROM) and U4 (MAX3232) are technically optional. You do not need the MAX32322 or its supporting passives if you do not need RS-232 support. The I2C EEPROM lets a DeviceTree overlay be automatically loaded at boot so linux kernel modules know what the pin assignments are, but this is just a convenience and also not strictly required.
+
+## Legal Notice
+
+Neither this device nor the DRA8181 module is, obviously, certified by the FCC. Only a suitably licensed individual may transmit using this device: you must have an amateur radio license. It is up to the operator to ensure they are following FCC requirements.
