@@ -172,7 +172,7 @@
         <path fill="none" stroke="rgb(52,101,164)" stroke-width="53" stroke-linejoin="round" d="M 7322,8629 C 10234,8867 8262,12522 11212,12739 "/>
         <path fill="rgb(52,101,164)" stroke="none" d="M 7305,8769 L 7032,8618 7317,8490 7305,8769 Z "/>
         <path fill="rgb(52,101,164)" stroke="none" d="M 11204,12598 L 11477,12748 11193,12877 11204,12598 Z "/>
-        <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="8569" y="10842"><tspan font-family="Liberation Sans, sans-serif" font-size="459px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="1372" fill="rgb(221,221,221)" stroke="none" style="white-space: pre">SPI0.1</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="8569" y="10842"><tspan font-family="Liberation Sans, sans-serif" font-size="459px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="1372" fill="rgb(221,221,221)" stroke="none" style="white-space: pre">SPI0.0</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.ConnectorShape">
@@ -181,7 +181,7 @@
         <path fill="none" stroke="rgb(52,101,164)" stroke-width="53" stroke-linejoin="round" d="M 7322,8606 C 10235,8351 8261,4415 11214,4184 "/>
         <path fill="rgb(52,101,164)" stroke="none" d="M 7317,8745 L 7032,8618 7304,8466 7317,8745 Z "/>
         <path fill="rgb(52,101,164)" stroke="none" d="M 11193,4046 L 11477,4174 11204,4325 11193,4046 Z "/>
-        <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="8569" y="6555"><tspan font-family="Liberation Sans, sans-serif" font-size="459px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="1372" fill="rgb(221,221,221)" stroke="none" style="white-space: pre">SPI0.0</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="8569" y="6555"><tspan font-family="Liberation Sans, sans-serif" font-size="459px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="1372" fill="rgb(221,221,221)" stroke="none" style="white-space: pre">SPI0.1</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.ConnectorShape">
