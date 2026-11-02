@@ -34,14 +34,9 @@ The BoM will be finalized once a verified working prototype has been assembled a
 
 The Pi's SPI0 bus is shared by the UART bridge (CE1) and codec (CE0). The codec's digital audio uses the Pi's PCM/I²S pins. The bridge's two UART channels connect separately to the DRA818 and ‎MAX3232, leaving the Pi's built-in UART pins available on the 40-pin header. The codec connects to the radio's analog input and output; its `GPIO_MFP5` pin drives the radio's PTT net. The codec's right headphone output feeds the two-pin speaker connection through a coupling capacitor.
 
-```text
-                       SPI0 CE1 ── SC16IS752 ── UART A ── DRA818V ── SMA antenna
-                      /                  └────── UART B ── ‎MAX3232 ── RS-232 pads
-Raspberry Pi 40-pin ── SPI0 CE0 ── TLV320AIC3204 ── analog audio ── DRA818V
-         header       └─ PCM/I²S ────────┘       └──────── speaker header
-                      ID I²C ───── CAT24C256
-                      I²C1 ─────── UI pads
-```
+## Functional Diagram
+
+![functional block diagram](diagram.svg)
 
 ## External connections
 
