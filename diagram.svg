@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.2" width="279.4mm" height="215.9mm" viewBox="0 0 27940 21590" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xml:space="preserve">
+<svg version="1.2" width="279.4mm" height="165.1mm" viewBox="0 0 27940 16510" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xml:space="preserve">
  <defs class="ClipPathGroup">
   <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
-   <rect x="0" y="0" width="27940" height="21590"/>
+   <rect x="0" y="0" width="27940" height="16510"/>
   </clipPath>
   <clipPath id="presentation_clip_path_shrink" clipPathUnits="userSpaceOnUse">
-   <rect x="27" y="21" width="27885" height="21547"/>
+   <rect x="27" y="16" width="27885" height="16477"/>
   </clipPath>
  </defs>
  <defs>
@@ -38,6 +38,7 @@
    <glyph unicode="M" horiz-adv-x="1373" d="M 1366,0 L 1366,940 C 1366,1044 1369,1144 1375,1240 1342,1121 1313,1027 1287,960 L 923,0 789,0 420,960 364,1130 331,1240 334,1129 338,940 338,0 168,0 168,1409 419,1409 794,432 C 807,393 820,351 833,306 845,261 853,228 857,208 862,235 874,275 891,330 908,384 919,418 925,432 L 1293,1409 1538,1409 1538,0 1366,0 Z "/>
    <glyph unicode="L" horiz-adv-x="906" d="M 168,0 L 168,1409 359,1409 359,156 1071,156 1071,0 168,0 Z "/>
    <glyph unicode="I" horiz-adv-x="193" d="M 189,0 L 189,1409 380,1409 380,0 189,0 Z "/>
+   <glyph unicode="H" horiz-adv-x="1147" d="M 1121,0 L 1121,653 359,653 359,0 168,0 168,1409 359,1409 359,813 1121,813 1121,1409 1312,1409 1312,0 1121,0 Z "/>
    <glyph unicode="G" horiz-adv-x="1340" d="M 103,711 C 103,940 164,1117 287,1242 410,1367 582,1430 804,1430 960,1430 1087,1404 1184,1351 1281,1298 1356,1214 1409,1098 L 1227,1044 C 1187,1124 1132,1182 1062,1219 991,1256 904,1274 799,1274 636,1274 512,1225 426,1127 340,1028 297,890 297,711 297,533 343,393 434,290 525,187 652,135 813,135 905,135 991,149 1071,177 1150,205 1215,243 1264,291 L 1264,545 843,545 843,705 1440,705 1440,219 C 1365,143 1274,84 1166,43 1057,1 940,-20 813,-20 666,-20 539,9 432,68 325,127 244,211 188,322 131,432 103,562 103,711 Z "/>
    <glyph unicode="E" horiz-adv-x="1113" d="M 168,0 L 168,1409 1237,1409 1237,1253 359,1253 359,801 1177,801 1177,647 359,647 359,156 1278,156 1278,0 168,0 Z "/>
    <glyph unicode="D" horiz-adv-x="1216" d="M 1381,719 C 1381,574 1353,447 1296,338 1239,229 1159,145 1055,87 951,29 831,0 695,0 L 168,0 168,1409 634,1409 C 873,1409 1057,1349 1187,1230 1316,1110 1381,940 1381,719 Z M 1189,719 C 1189,894 1141,1027 1046,1119 950,1210 811,1256 630,1256 L 359,1256 359,153 673,153 C 776,153 867,176 946,221 1024,266 1084,332 1126,417 1168,502 1189,603 1189,719 Z "/>
@@ -142,15 +143,15 @@
         <rect class="BoundingBox" stroke="none" fill="none" x="21319" y="1950" width="5495" height="1908"/>
         <path fill="rgb(204,204,204)" stroke="none" d="M 24066,3856 L 21320,3856 21320,1951 26812,1951 26812,3856 24066,3856 Z "/>
         <path fill="none" stroke="rgb(52,101,164)" d="M 24066,3856 L 21320,3856 21320,1951 26812,1951 26812,3856 24066,3856 Z "/>
-        <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="21637" y="2769"><tspan font-family="Liberation Sans, sans-serif" font-size="635px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="4859" fill="rgb(0,0,0)" stroke="none" style="white-space: pre">UART TO RS232</tspan></tspan></tspan><tspan class="TextParagraph"><tspan class="TextPosition" x="22672" y="3480"><tspan font-family="Liberation Sans, sans-serif" font-size="635px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="2789" fill="rgb(0,0,0)" stroke="none" style="white-space: pre">MAX3232</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="21637" y="2769"><tspan font-family="Liberation Sans, sans-serif" font-size="635px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="4859" fill="rgb(0,0,0)" stroke="none" style="white-space: pre">UART TO RS232</tspan></tspan></tspan><tspan class="TextParagraph"><tspan class="TextPosition" x="22460" y="3480"><tspan font-family="Liberation Sans, sans-serif" font-size="635px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="3212" fill="rgb(0,0,0)" stroke="none" style="white-space: pre">(MAX3232)</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.CustomShape">
        <g id="id8">
-        <rect class="BoundingBox" stroke="none" fill="none" x="1950" y="3539" width="4448" height="1273"/>
-        <path fill="rgb(221,221,221)" stroke="none" d="M 4174,4810 L 1951,4810 1951,3540 6396,3540 6396,4810 4174,4810 Z "/>
-        <path fill="none" stroke="rgb(52,101,164)" d="M 4174,4810 L 1951,4810 1951,3540 6396,3540 6396,4810 4174,4810 Z "/>
-        <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="2450" y="4396"><tspan font-family="Liberation Sans, sans-serif" font-size="635px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="3447" fill="rgb(0,0,0)" stroke="none" style="white-space: pre">CAT24C256</tspan></tspan></tspan></text>
+        <rect class="BoundingBox" stroke="none" fill="none" x="1950" y="3221" width="4448" height="1591"/>
+        <path fill="rgb(221,221,221)" stroke="none" d="M 4174,4810 L 1951,4810 1951,3222 6396,3222 6396,4810 4174,4810 Z "/>
+        <path fill="none" stroke="rgb(52,101,164)" d="M 4174,4810 L 1951,4810 1951,3222 6396,3222 6396,4810 4174,4810 Z "/>
+        <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="3162" y="3881"><tspan font-family="Liberation Sans, sans-serif" font-size="635px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="2023" fill="rgb(0,0,0)" stroke="none" style="white-space: pre">HAT ID</tspan></tspan></tspan><tspan class="TextParagraph"><tspan class="TextPosition" x="2239" y="4592"><tspan font-family="Liberation Sans, sans-serif" font-size="635px" font-weight="400" lengthAdjust="spacingAndGlyphs" textLength="3870" fill="rgb(0,0,0)" stroke="none" style="white-space: pre">(CAT24C256)</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.ConnectorShape">
