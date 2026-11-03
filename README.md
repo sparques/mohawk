@@ -13,6 +13,7 @@ Linux has drivers for both the SPI UART interface and the codec, so two hardware
 | [`mohawk/mohawk.kicad_pro`](mohawk/mohawk.kicad_pro) | KiCad project; open this file to work on the design. |
 | [`mohawk/mohawk.kicad_sch`](mohawk/mohawk.kicad_sch) | Main schematic: Pi header, radio, UART bridge, RS-232, and HAT ID EEPROM. |
 | [`mohawk/soundChip.kicad_sch`](mohawk/soundChip.kicad_sch) | Hierarchical sheet for the audio codec and speaker output. |
+| [`mohawk-overlay.dts`](mohawk-overlay.dts) | Raspberry Pi Zero Device Tree overlay for the SPI UART and codec sound card. |
 | [`mohawk/mohawk.kicad_pcb`](mohawk/mohawk.kicad_pcb) | Routed, approximately 65 × 30 mm, two-layer PCB. |
 | [`mohawk/lib/`](mohawk/lib/) | Project-specific symbols, footprints, and 3D models. |
 | [`datasheets/`](datasheets/) | Local copies of component datasheets. |
@@ -55,7 +56,7 @@ J3 carries **5 V power** but uses the Pi's **3.3 V GPIO/I²C signals**. `GPIO17`
 
 There is no USB UART or 2 × 5 IDC RS-232 connector in the current schematic. The external serial connection is the ‎MAX3232 and J4's five SMD pads.
 
-The HAT ID EEPROM uses `ID_SDA`/`ID_SCL` on J1 pins 27/28. Those are separate from the ordinary I²C1 pins used at J3. The device tree overlay is still a WIP, pending the first prototype build.
+The HAT ID EEPROM uses `ID_SDA`/`ID_SCL` on J1 pins 27/28. Those are separate from the ordinary I²C1 pins used at J3. The Device Tree overlay is present but has not been tested on hardware.
 
 ## Control signals on the Pi header
 
@@ -71,6 +72,24 @@ The HAT ID EEPROM uses `ID_SDA`/`ID_SCL` on J1 pins 27/28. Those are separate fr
 | GPIO27 (13) | Codec reset |
 
 The radio's `PTT` is connected to the codec's multifunction GPIO rather than directly to a Pi GPIO. Software must configure that codec pin before attempting to transmit. These are schematic connections, not a tested Linux setup or a promise of a particular `/dev/tty*` assignment.
+
+## Device Tree overlay
+
+The overlay targets the Raspberry Pi Zero family. It enables SPI0 with the codec on CE0 and the SC16IS752 on CE1, enables I²S, and creates a simple ALSA sound card. UART channel A connects to the DRA818; channel B connects to the MAX3232. The bridge's interrupt and reset use GPIO25 and GPIO5. The codec reset uses GPIO27.
+
+**Fit R15 (10 Ω) before using the codec.** The schematic marks it do-not-populate, but it is the only connection from GPIO4/GPCLK0 to the codec MCLK pin. The overlay supplies a 12.288 MHz master clock on that pin. With R15 absent, the audio clock is disconnected regardless of Device Tree configuration.
+
+On a Raspberry Pi with the kernel Device Tree headers installed, compile and install the overlay:
+
+```sh
+cpp -nostdinc -undef -D__DTS__ -I /lib/modules/$(uname -r)/build/include -x assembler-with-cpp mohawk-overlay.dts /tmp/mohawk-overlay.dts
+dtc -@ -I dts -O dtb -o mohawk.dtbo /tmp/mohawk-overlay.dts
+sudo cp mohawk.dtbo /boot/firmware/overlays/
+```
+
+Add `dtoverlay=mohawk` to `/boot/firmware/config.txt` and reboot. On systems using `/boot/overlays` and `/boot/config.txt`, use those paths instead. The HAT ID EEPROM is not programmed by this overlay; add the `dtoverlay` line explicitly until it is.
+
+The codec's MFP5 pin is initialized high so the radio's active-low PTT stays released. Its ALSA `MFP5 GPIO` control can later drive it low to transmit; ensure the control is set high again when transmission ends. The overlay also describes the radio receive audio on `IN1_L`, transmit audio on `LOL`, and the monitor headphone output on `HPR`. Audio mixer routing and levels still need to be set in ALSA and verified on a prototype.
 
 ## Design and build status
 

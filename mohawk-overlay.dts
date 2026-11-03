@@ -1,0 +1,135 @@
+// SPDX-License-Identifier: (GPL-2.0 OR MIT)
+// Mohawk on a Raspberry Pi Zero: SC16IS752 on SPI0 CE1 and AIC3204 on CE0.
+// Fit R15 (10 ohms) to connect GPIO4/GPCLK0 to the codec MCLK input.
+
+/dts-v1/;
+/plugin/;
+
+#include <dt-bindings/clock/bcm2835.h>
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/interrupt-controller/irq.h>
+#include <dt-bindings/pinctrl/bcm2835.h>
+
+/ {
+	compatible = "brcm,bcm2835";
+
+	fragment@0 {
+		target = <&spi0>;
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+
+			mohawk_codec: codec@0 {
+				compatible = "ti,tlv320aic32x4";
+				reg = <0>;
+				spi-max-frequency = <4000000>;
+				#sound-dai-cells = <0>;
+
+				clocks = <&clocks BCM2835_CLOCK_GP0>;
+				clock-names = "mclk";
+				assigned-clocks = <&clocks BCM2835_CLOCK_GP0>;
+				assigned-clock-rates = <12288000>;
+				pinctrl-names = "default";
+				pinctrl-0 = <&mohawk_gpclk0>;
+
+				reset-gpios = <&gpio 27 GPIO_ACTIVE_LOW>;
+				iov-supply = <&mohawk_3v3>;
+				ldoin-supply = <&mohawk_3v3>;
+
+				// MFP5 drives active-low radio PTT. Start as an output high.
+				// MFP1-4 retain the driver's defaults for SPI and I2S.
+				aic32x4-gpio-func = <0xff 0xff 0xff 0xff 0x0d>;
+			};
+
+			mohawk_uart: serial@1 {
+				compatible = "nxp,sc16is752";
+				reg = <1>;
+				spi-max-frequency = <4000000>;
+				clock-frequency = <1843200>;
+				reset-gpios = <&gpio 5 GPIO_ACTIVE_LOW>;
+				interrupt-parent = <&gpio>;
+				interrupts = <25 IRQ_TYPE_EDGE_FALLING>;
+				pinctrl-names = "default";
+				pinctrl-0 = <&mohawk_uart_irq>;
+				// Port A: DRA818. Port B: MAX3232 with RTS/CTS.
+				nxp,modem-control-line-ports = <1>;
+			};
+		};
+	};
+
+	fragment@1 {
+		target = <&gpio>;
+		__overlay__ {
+			mohawk_gpclk0: mohawk_gpclk0 {
+				brcm,pins = <4>;
+				brcm,function = <BCM2835_FSEL_ALT0>;
+				brcm,pull = <BCM2835_PUD_OFF>;
+			};
+
+			mohawk_uart_irq: mohawk_uart_irq {
+				brcm,pins = <25>;
+				brcm,function = <BCM2835_FSEL_GPIO_IN>;
+				brcm,pull = <BCM2835_PUD_OFF>;
+			};
+		};
+	};
+
+	fragment@2 {
+		target = <&i2s>;
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@3 {
+		target-path = "/";
+		__overlay__ {
+			mohawk_3v3: regulator-mohawk-3v3 {
+				compatible = "regulator-fixed";
+				regulator-name = "mohawk-3v3";
+				regulator-min-microvolt = <3300000>;
+				regulator-max-microvolt = <3300000>;
+				regulator-always-on;
+			};
+
+			sound-mohawk {
+				compatible = "simple-audio-card";
+				simple-audio-card,name = "Mohawk";
+				simple-audio-card,format = "i2s";
+				simple-audio-card,bitclock-master = <&mohawk_cpu_dai>;
+				simple-audio-card,frame-master = <&mohawk_cpu_dai>;
+				simple-audio-card,widgets =
+					"Line", "Radio Audio Out",
+					"Line", "Radio Audio In",
+					"Headphone", "Monitor";
+				simple-audio-card,routing =
+					"IN1_L", "Radio Audio Out",
+					"Radio Audio In", "LOL",
+					"Monitor", "HPR";
+
+				mohawk_cpu_dai: simple-audio-card,cpu {
+					sound-dai = <&i2s>;
+				};
+
+				simple-audio-card,codec {
+					sound-dai = <&mohawk_codec>;
+				};
+			};
+		};
+	};
+
+	fragment@4 {
+		target = <&spidev0>;
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+
+	fragment@5 {
+		target = <&spidev1>;
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+};
