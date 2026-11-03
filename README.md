@@ -26,7 +26,7 @@ The schematic and board were saved with KiCad 10. Custom footprints use `${KIPRJ
 | U3 | DRA818 radio module (VHF variant intended) | RF transceiver; UART configuration, analog audio, PTT, squelch, and power-down signals | [DRA818V](datasheets/DRA818V.pdf) |
 | U5 | TLV320AIC3204 | SPI-controlled audio codec with I²S/PCM audio to the Pi | [TLV320AIC3204](datasheets/tlv320aic3204.pdf) |
 | U2 | SC16IS752 | SPI-to-dual-UART bridge: one channel for the radio, one for external serial | [SC16IS752](datasheets/SC16IS752_SC16IS762.pdf) |
-| U4 | ‎MAX3232 | Converts the external UART channel to RS-232 levels | [‎MAX3232E](datasheets/‎MAX3232e.pdf) |
+| U4 | ‎MAX3232 | Converts the external UART channel to RS-232 levels | [‎MAX3232E](datasheets/max3232e.pdf) |
 | U1 | CAT24C256 | Raspberry Pi HAT identification EEPROM on the dedicated ID I²C pins | — |
 | Y1 | 1.8432 MHz oscillator | Clock for the SC16IS752 | [Abracon ASE series](datasheets/ASEseries.pdf) |
 
