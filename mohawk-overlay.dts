@@ -24,6 +24,8 @@
 				compatible = "ti,tlv320aic32x4";
 				reg = <0>;
 				spi-max-frequency = <4000000>;
+				// TLV320AIC3204 uses SPI mode 1 (CPOL=0, CPHA=1).
+				spi-cpha;
 				#sound-dai-cells = <0>;
 
 				clocks = <&clocks BCM2835_CLOCK_GP0>;
