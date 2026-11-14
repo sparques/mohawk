@@ -13580,7 +13580,6 @@
 	(symbol
 		(lib_id "Device:D_Small_Filled")
 		(at 166.37 58.42 0)
-		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
